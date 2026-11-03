@@ -1,0 +1,53 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: ${{ matrix.project }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        project:
+          - market-data-pipeline
+          - trade-capture
+          - positions-pnl
+          - trading-backoffice
+          - settlement-recon
+          - refdata
+          - risk-margin
+          - regulatory-reporting
+          - trading-backoffice-eod
+          - surveillance
+    defaults:
+      run:
+        working-directory: ${{ matrix.project }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+      - uses: sbt/setup-sbt@v1
+      - name: Cache Coursier and Ivy
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/coursier
+            ~/.ivy2/cache
+          key: ${{ runner.os }}-sbt-${{ hashFiles(format('{0}/**/*.sbt', matrix.project), format('{0}/project/build.properties', matrix.project)) }}
+          restore-keys: |
+            ${{ runner.os }}-sbt-
+      - name: Compile
+        run: sbt compile
+      - name: Test
+        run: sbt test

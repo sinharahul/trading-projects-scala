@@ -1,0 +1,5 @@
+account_number,ticker,quantity,avg_cost_cents
+ACC-1001,AAPL,50,17000
+ACC-1001,MSFT,100,41000
+ACC-1002,AAPL,0,0
+ACC-1002,TSLA,0,0

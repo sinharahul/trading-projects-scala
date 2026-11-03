@@ -1,0 +1,47 @@
+[
+  {
+    "id": "B-2001",
+    "companyName": "Apple Inc",
+    "identifiers": {"cusip": "037833100", "isin": "US0378331005", "figi": "BBG000B9XRY4"},
+    "ticker": "AAPL", "exchange": "XNAS",
+    "assetClass": "EQ", "type": "COMMON_STOCK", "currency": "USD",
+    "issuer": {"name": "Apple Inc.", "lei": "HWUPKR0MPOU8FGXBT09", "country": "US", "sector": "Information Technology"},
+    "status": "ACTIVE", "asOf": "2026-10-30"
+  },
+  {
+    "id": "B-2002",
+    "companyName": "Microsoft Corp.",
+    "identifiers": {"cusip": "594918104", "isin": "US5949181045", "figi": "BBG000BPH459"},
+    "ticker": "MSFT", "exchange": "XNAS",
+    "assetClass": "EQ", "type": "COMMON_STOCK", "currency": "USD",
+    "issuer": {"name": "Microsoft Corporation", "lei": "INR2EJN1ERAN0JX0P33", "country": "US", "sector": "Information Technology"},
+    "status": "ACTIVE", "asOf": "2026-10-30"
+  },
+  {
+    "id": "B-2003",
+    "companyName": "Alphabet Inc. - Class A",
+    "identifiers": {"cusip": "02079K305", "isin": "US02079K3059", "figi": "BBG009S39JX6"},
+    "ticker": "GOOGL", "exchange": "XNAS",
+    "assetClass": "EQ", "type": "COMMON_STOCK", "currency": "USD",
+    "issuer": {"name": "Alphabet Inc.", "lei": "5493006MFX84J8XHBK1", "country": "US", "sector": "Communication Services"},
+    "status": "ACTIVE", "asOf": "2026-10-30"
+  },
+  {
+    "id": "B-2004",
+    "companyName": "Meta Platforms, Inc.",
+    "identifiers": {"cusip": "30303M102", "isin": "US30303M1027", "figi": "BBG000B9Y5X6"},
+    "ticker": "META", "exchange": "XNAS",
+    "assetClass": "EQ", "type": "COMMON_STOCK", "currency": "USD",
+    "issuer": {"name": "Meta Platforms, Inc.", "lei": "5493002P3G3G6G0G0G0G", "country": "US", "sector": "Communication Services"},
+    "status": "ACTIVE", "asOf": "2026-10-30"
+  },
+  {
+    "id": "B-2005",
+    "companyName": "Old Ticker Corporation",
+    "identifiers": {"cusip": "037833100", "isin": "US0378331005", "figi": "BBG000B9XRY4"},
+    "ticker": "OTC", "exchange": "XNAS",
+    "assetClass": "EQ", "type": "COMMON_STOCK", "currency": "USD",
+    "issuer": {"name": "Old Ticker Corp", "lei": null, "country": "US", "sector": "Technology"},
+    "status": "ACTIVE", "asOf": "2026-10-30"
+  }
+]
